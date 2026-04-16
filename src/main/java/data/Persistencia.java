@@ -37,6 +37,11 @@ public class Persistencia {
         marcas.add(m4);
     }
     
+    public static void agregarVehiculo(Vehiculo v){
+    vehiculos.add(v);
+    }
+    
+    /*
     private static void inicializarVehiculos(){
         Sucursal s1 = sucursales.get(0);
         Sucursal s2 = sucursales.get(1);
@@ -57,9 +62,18 @@ public class Persistencia {
         vehiculos.add(v3);
         vehiculos.add(v4);
     }
+*/
     
     public static ArrayList<Vehiculo> getVehiculos(){
         return vehiculos;
+    }
+    
+    public static ArrayList<Marca> getMarcas(){
+        return marcas;
+    }
+
+    public static ArrayList<Sucursal> getSucursales() {
+        return sucursales;
     }
     
     public static Optional<Vehiculo> getVehiculo(String patente){
@@ -72,6 +86,6 @@ public class Persistencia {
         inicializarResponsables();
         inicializarSucursales();
         inicializarMarcas();
-        inicializarVehiculos();
+        //inicializarVehiculos();
     }
 }
