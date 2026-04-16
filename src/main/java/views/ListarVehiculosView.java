@@ -12,7 +12,7 @@ public class ListarVehiculosView extends javax.swing.JFrame {
     /**
      * Creates new form ListarAnimalesView
      */
-    public ListarVehiculosView() {
+    public ListarVehiculosView(Menu aThis) {
         initComponents();
         listarVehiculos();
     }
@@ -196,7 +196,7 @@ public class ListarVehiculosView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ListarVehiculosView().setVisible(true);
+                new ListarVehiculosView(new Menu()).setVisible(true);
             }
         });
     }
